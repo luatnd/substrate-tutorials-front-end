@@ -13,6 +13,7 @@ import Interactor from './Interactor';
 import Metadata from './Metadata';
 import NodeInfo from './NodeInfo';
 import TemplateModule from './TemplateModule';
+import ProofOfExistence from './ProofOfExistence';
 import Transfer from './Transfer';
 import Upgrade from './Upgrade';
 
@@ -71,6 +72,9 @@ function Main () {
           <Grid.Row>
             <Interactor accountPair={accountPair} />
             <Events />
+          </Grid.Row>
+          <Grid.Row>
+            <ProofOfExistence accountPair={accountPair} />
           </Grid.Row>
           <Grid.Row>
             <TemplateModule accountPair={accountPair} />
