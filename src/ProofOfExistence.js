@@ -132,6 +132,11 @@ export function Main (props) {
 export default function ProofOfExistence (props) {
   const { api } = useSubstrate();
 
+  // TODO: Remove it later
+  if (process.env.NODE_ENV === 'development') {
+    window.tmp__api = api;
+  }
+
   /*
   proofs is defined at:
   #[pallet::storage]

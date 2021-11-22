@@ -16,6 +16,7 @@ import TemplateModule from './TemplateModule';
 import ProofOfExistence from './ProofOfExistence';
 import Transfer from './Transfer';
 import Upgrade from './Upgrade';
+import Kitties from './Kitties/Kitties';
 
 function Main () {
   const [accountAddress, setAccountAddress] = useState(null);
@@ -75,6 +76,9 @@ function Main () {
           </Grid.Row>
           <Grid.Row>
             <ProofOfExistence accountPair={accountPair} />
+          </Grid.Row>
+          <Grid.Row>
+            <Kitties accountPair={accountPair} />
           </Grid.Row>
           <Grid.Row>
             <TemplateModule accountPair={accountPair} />
